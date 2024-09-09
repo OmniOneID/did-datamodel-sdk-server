@@ -55,7 +55,6 @@ Libraries can be found in the [build folder](source/did-data-model-server/build/
 
 ```groovy
     implementation 'com.google.guava:guava:33.2.1-jre'
-    implementation 'org.glassfish:jakarta.el:4.0.2'
     implementation 'org.hibernate:hibernate-validator:7.0.0.Final'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.projectlombok:lombok:1.18.34'

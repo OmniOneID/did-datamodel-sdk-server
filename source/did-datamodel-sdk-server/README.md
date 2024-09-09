@@ -55,7 +55,6 @@ dependencies {
 ```groovy
     implementation files('libs/did-datamodel-sdk-server-1.0.0.jar')
     implementation 'com.google.guava:guava:33.2.1-jre'
-    implementation 'org.glassfish:jakarta.el:4.0.2'
     implementation 'org.hibernate:hibernate-validator:7.0.0.Final'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.projectlombok:lombok:1.18.34'
