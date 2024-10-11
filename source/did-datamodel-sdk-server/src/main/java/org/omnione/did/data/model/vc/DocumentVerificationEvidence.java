@@ -6,6 +6,8 @@ package org.omnione.did.data.model.vc;
 
 import jakarta.validation.constraints.NotEmpty;
 
+import java.util.Map;
+
 import org.omnione.did.data.model.util.json.GsonWrapper;
 
 import com.google.gson.annotations.Expose;
@@ -48,9 +50,9 @@ public class DocumentVerificationEvidence extends Evidence {
 	 * The license number of the document
 	 * @see Presence
 	 */
-	@SerializedName("licenseNumber")
+	@SerializedName("attribute")
 	@Expose
-	private String licenseNumber;
+	private Map<String, String> attribute;
 
 	@Override
 	public void fromJson(String val) {
@@ -62,7 +64,7 @@ public class DocumentVerificationEvidence extends Evidence {
 		evidenceDocument = data.evidenceDocument;
 		subjectPresence = data.subjectPresence;
 		documentPresence = data.documentPresence;
-		licenseNumber = data.licenseNumber;
+		attribute = data.attribute;
 	}
 
 }

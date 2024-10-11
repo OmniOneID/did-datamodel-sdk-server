@@ -49,6 +49,9 @@ public class CredentialSchema extends DataObject {
 	@Expose
 	private String value;
 	
+    @SerializedName("presentAll")
+    @Expose
+    private Boolean presentAll;
 		
 	// Verify Profile
 	/**
@@ -85,7 +88,7 @@ public class CredentialSchema extends DataObject {
 		displayClaims = data.displayClaims;
 		requiredClaims = data.requiredClaims;
 		allowedIssuers = data.allowedIssuers;
-		
+		presentAll = data.presentAll;
 	}
 
 }
