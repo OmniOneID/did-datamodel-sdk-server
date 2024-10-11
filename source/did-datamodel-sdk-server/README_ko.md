@@ -8,7 +8,7 @@ ex) DidDocument, VerifiableCredential 클래스 등
 | 구분 | 내용                |
 |------|----------------------------|
 | Language  | Java 17|
-| Build System  | Gradle 8.2 |
+| Build System  | Gradle 8.8 |
 
 <br>
 

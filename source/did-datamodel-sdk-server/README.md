@@ -6,11 +6,11 @@ This document is a guide for using the OpenDID Data-Model-Server SDK, which prov
 | Category | Details                |
 |------|----------------------------|
 | Language  | Java 17|
-| Build System  | Gradle 8.2 |
+| Build System  | Gradle 8.8 |
 
 <br>
 
-Build Method
+## Build Method
 : Since this SDK is a Gradle project, Gradle must be installed.
 1. Open the `build.gradle` file of the project and add the following content:
 ```groovy
