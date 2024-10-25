@@ -9,6 +9,7 @@ did-datamodel-sdk-server
 ├── CLA.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── LICENSE
 ├── LICENSE-dependencies.md
 ├── MAINTAINERS.md
 ├── README.md
@@ -16,18 +17,20 @@ did-datamodel-sdk-server
 ├── RELEASE-PROCESS.md
 ├── SECURITY.md
 └── source
-    └── did-datamodel-sdk-server
-        ├── README.md
-        ├── README_ko.md
-        ├── build.gradle
-        ├── gradle
-        │   └── wrapper
-        ├── build    
-        ├── .gitignore
-        ├── gradlew        
-        ├── gradlew.bat
-        ├── settings.gradle
-        └── src
+    ├── did-datamodel-sdk-server
+    │   ├── README.md
+    │   ├── README_ko.md
+    │   ├── build.gradle
+    │   ├── gradle
+    │   │   └── wrapper
+    │   ├── build    
+    │   ├── .gitignore
+    │   ├── gradlew        
+    │   ├── gradlew.bat
+    │   ├── settings.gradle
+    │   └── src
+    └── release
+        └── did-datamodel-sdk-server-1.0.0.jar
 ```
 
 | Name                    | Description                                     |
@@ -38,6 +41,7 @@ did-datamodel-sdk-server
 | CHANGELOG.md            | Version-specific changes in the project         |
 | CODE_OF_CONDUCT.md      | Code of conduct for contributors                |
 | CONTRIBUTING.md         | Contribution guidelines and procedures          |
+| LICENSE                 | Apache 2.0                                      |
 | LICENSE-dependencies.md | Licenses for the project’s dependency libraries |
 | MAINTAINERS.md          | General guidelines for maintaining              |
 | RELEASE-PROCESS.md      | Release process                                 |
@@ -83,15 +87,14 @@ dependencies {
 
 ## Libraries
 
-Libraries can be found in the [build folder](source/did-data-model-server/build/libs).
+Libraries can be found in the [build folder](/source/release/).
 
-
+## DataModel SDK
 1. Copy the did-data-model-sdk-server-1.0.0.jar file to the libs of the server project.
 2. Add the following dependencies to the server project's build.gradle.
 
 ```groovy
     implementation 'com.google.guava:guava:33.2.1-jre'
-    implementation 'org.glassfish:jakarta.el:4.0.2'
     implementation 'org.hibernate:hibernate-validator:7.0.0.Final'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.projectlombok:lombok:1.18.34'
@@ -107,4 +110,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_
 
 
 ## License
-Copyright 2024 Raonsecure
+[Apache 2.0](LICENSE)

@@ -9,6 +9,7 @@ did-datamodel-sdk-server
 ├── CLA.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
+├── LICENSE
 ├── LICENSE-dependencies.md
 ├── MAINTAINERS.md
 ├── README.md
@@ -16,18 +17,20 @@ did-datamodel-sdk-server
 ├── RELEASE-PROCESS.md
 ├── SECURITY.md
 └── source
-    └── did-datamodel-sdk-server
-        ├── README.md
-        ├── README_ko.md
-        ├── build.gradle
-        ├── gradle
-        │   └── wrapper
-        ├── build    
-        ├── .gitignore
-        ├── gradlew        
-        ├── gradlew.bat
-        ├── settings.gradle
-        └── src
+    ├── did-datamodel-sdk-server
+    │   ├── README.md
+    │   ├── README_ko.md
+    │   ├── build.gradle
+    │   ├── gradle
+    │   │   └── wrapper
+    │   ├── build    
+    │   ├── .gitignore
+    │   ├── gradlew        
+    │   ├── gradlew.bat
+    │   ├── settings.gradle
+    │   └── src
+    └── release
+        └── did-datamodel-sdk-server-1.0.0.jar
 ```
 
 |  이름 |         역할                    |
@@ -38,6 +41,7 @@ did-datamodel-sdk-server
 | CHANGELOG.md| 프로젝트 버전별 변경사항           |
 | CODE_OF_CONDUCT.md| 기여자의 행동강령            |
 | CONTRIBUTING.md| 기여 절차 및 방법           |
+| LICENSE                 | Apache 2.0                                      |
 | LICENSE-dependencies.md| 프로젝트 의존성 라이브러리에 대한 라이선스            |
 | MAINTAINERS.md          | 유지관리 가이드              |
 | RELEASE-PROCESS.md      | 릴리즈 절차                                |
@@ -83,14 +87,14 @@ dependencies {
 
 ## 라이브러리
 
-라이브러리는 [build 폴더](source/did-datamodel-sdk-server/build/libs)에서 찾을 수 있습니다.
+라이브러리는 [build 폴더](/source/release/)에서 찾을 수 있습니다.
 
+## DataModel SDK
 1. 서버 프로젝트의 libs에 did-datamodel-sdk-server-1.0.0.jar 파일을 복사한다.
 2. 서버 프로젝트의 build gradle에 아래 의존성을 추가한다.
 
 ```groovy
     implementation 'com.google.guava:guava:33.2.1-jre'
-    implementation 'org.glassfish:jakarta.el:4.0.2'
     implementation 'org.hibernate:hibernate-validator:7.0.0.Final'
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'org.projectlombok:lombok:1.18.34'
@@ -105,5 +109,5 @@ dependencies {
 Contributing 및 pull request 제출 절차에 대한 자세한 내용은 [CONTRIBUTING.md](CONTRIBUTING.md)와 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) 를 참조하세요.
 
 ## 라이선스
-Copyright 2024 Raonsecure
+[Apache 2.0](LICENSE)
 
