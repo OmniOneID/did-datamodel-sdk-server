@@ -87,9 +87,9 @@ dependencies {
 
 ## Libraries
 
-Libraries can be found in the [build folder](/source/release/).
+Libraries can be found in the [Releases](https://github.com/OmniOneID/did-datamodel-sdk-server/releases).
 
-## DataModel SDK
+### DataModel SDK
 1. Copy the did-data-model-sdk-server-1.0.0.jar file to the libs of the server project.
 2. Add the following dependencies to the server project's build.gradle.
 
