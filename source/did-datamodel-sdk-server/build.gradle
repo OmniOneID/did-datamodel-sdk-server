@@ -20,15 +20,15 @@ group = 'org.omnione.did'
 
 jar {
     archiveBaseName.set('did-datamodel-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 
 
 java {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 dependencies {

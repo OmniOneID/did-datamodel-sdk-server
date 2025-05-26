@@ -30,7 +30,7 @@ did-datamodel-sdk-server
     │   ├── settings.gradle
     │   └── src
     └── release
-        └── did-datamodel-sdk-server-1.0.0.jar
+        └── did-datamodel-sdk-server-2.0.0.jar
 ```
 
 |  이름 |         역할                    |
@@ -63,13 +63,13 @@ group = 'org.omnione.did'
 
 jar {
     archiveBaseName.set('did-datamodel-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 dependencies {
@@ -81,7 +81,7 @@ dependencies {
 }
 ```
 2. 사용하는 IDE에서 `Gradle task` 창을 열고, 프로젝트의 `build > build > 태스크를 실행한다.
-3. 실행이 완료되면 `%Data-Model repository%/build/libs/` 폴더에 `did-datamodel-sdk-server-1.0.0.jar` 파일을 생성된다.
+3. 실행이 완료되면 `%Data-Model repository%/build/libs/` 폴더에 `did-datamodel-sdk-server-2.0.0.jar` 파일을 생성된다.
 
 <br>
 
@@ -90,7 +90,7 @@ dependencies {
 라이브러리는 [Releases](https://github.com/OmniOneID/did-datamodel-sdk-server/releases) 에서 찾을 수 있습니다.
 
 ## DataModel SDK
-1. 서버 프로젝트의 libs에 did-datamodel-sdk-server-1.0.0.jar 파일을 복사한다.
+1. 서버 프로젝트의 libs에 did-datamodel-sdk-server-2.0.0.jar 파일을 복사한다.
 2. 서버 프로젝트의 build gradle에 아래 의존성을 추가한다.
 
 ```groovy
@@ -100,7 +100,7 @@ dependencies {
     implementation 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
 
-    implementation files('libs/did-datamodel-sdk-server-1.0.0.jar')
+    implementation files('libs/did-datamodel-sdk-server-2.0.0.jar')
 ```
 3. `Gradle`을 동기화하여 의존성이 제대로 추가되었는지 확인한다.
 
