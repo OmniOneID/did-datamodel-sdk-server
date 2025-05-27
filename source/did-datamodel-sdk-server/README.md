@@ -5,7 +5,7 @@ This document is a guide for using the OpenDID Data-Model-Server SDK, which prov
 ## S/W Specifications
 | Category | Details                |
 |------|----------------------------|
-| Language  | Java 17|
+| Language  | Java 21|
 | Build System  | Gradle 8.8 |
 
 <br>
@@ -26,13 +26,13 @@ group = 'org.omnione.did'
 
 jar {
     archiveBaseName.set('did-datamodel-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 dependencies {
@@ -44,16 +44,16 @@ dependencies {
 }
 ```
 2. In the IDE, open the `Gradle task` window and execute the `build > build` task for the project.
-3. Once the execution is complete, the `did-datamodel-sdk-server-1.0.0.jar` file will be generated in the `%Data-Model repository%/build/libs/` folder.
+3. Once the execution is complete, the `did-datamodel-sdk-server-2.0.0.jar` file will be generated in the `%Data-Model repository%/build/libs/` folder.
 
 <br>
 
 ## SDK Application Method
-1. Copy the `did-datamodel-sdk-server-1.0.0.jar` file to the `libs` directory of the project where it will be used.
+1. Copy the `did-datamodel-sdk-server-2.0.0.jar` file to the `libs` directory of the project where it will be used.
 2. Add the following dependencies to the build.gradle file of the project where it will be used:
 
 ```groovy
-    implementation files('libs/did-datamodel-sdk-server-1.0.0.jar')
+    implementation files('libs/did-datamodel-sdk-server-2.0.0.jar')
     implementation 'com.google.guava:guava:33.2.1-jre'
     implementation 'org.hibernate:hibernate-validator:7.0.0.Final'
     implementation 'com.google.code.gson:gson:2.8.9'

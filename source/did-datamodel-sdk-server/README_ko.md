@@ -7,7 +7,7 @@ ex) DidDocument, VerifiableCredential 클래스 등
 ## S/W 사양
 | 구분 | 내용                |
 |------|----------------------------|
-| Language  | Java 17|
+| Language  | Java 21|
 | Build System  | Gradle 8.8 |
 
 <br>
@@ -28,13 +28,13 @@ group = 'org.omnione.did'
 
 jar {
     archiveBaseName.set('did-datamodel-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 dependencies {
@@ -46,16 +46,16 @@ dependencies {
 }
 ```
 2. 사용하는 IDE에서 `Gradle task` 창을 열고, 프로젝트의 `build > build > 태스크를 실행한다.
-3. 실행이 완료되면 `%Data-Model repository%/build/libs/` 폴더에 `did-datamodel-sdk-server-1.0.0.jar` 파일을 생성된다.
+3. 실행이 완료되면 `%Data-Model repository%/build/libs/` 폴더에 `did-datamodel-sdk-server-2.0.0.jar` 파일을 생성된다.
 
 <br>
 
 ## SDK 적용 방법
-1. 사용 할 프로젝트의 libs에 did-datamodel-sdk-server-1.0.0.jar 파일을 복사한다.
+1. 사용 할 프로젝트의 libs에 did-datamodel-sdk-server-2.0.0.jar 파일을 복사한다.
 2. 사용 할 프로젝트의 build gradle에 아래 의존성을 추가한다.
 
 ```groovy
-    implementation files('libs/did-datamodel-sdk-server-1.0.0.jar')
+    implementation files('libs/did-datamodel-sdk-server-2.0.0.jar')
     implementation 'com.google.guava:guava:33.2.1-jre'
     implementation 'org.hibernate:hibernate-validator:7.0.0.Final'
     implementation 'com.google.code.gson:gson:2.8.9'
