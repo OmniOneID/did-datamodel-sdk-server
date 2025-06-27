@@ -10,7 +10,7 @@ did-datamodel-sdk-server
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
-├── LICENSE-dependencies.md
+├── dependencies-license.md
 ├── MAINTAINERS.md
 ├── README.md
 ├── README_ko.md
@@ -30,7 +30,7 @@ did-datamodel-sdk-server
     │   ├── settings.gradle
     │   └── src
     └── release
-        └── did-datamodel-sdk-server-1.0.0.jar
+        └── did-datamodel-sdk-server-2.0.0.jar
 ```
 
 | Name                    | Description                                     |
@@ -42,7 +42,7 @@ did-datamodel-sdk-server
 | CODE_OF_CONDUCT.md      | Code of conduct for contributors                |
 | CONTRIBUTING.md         | Contribution guidelines and procedures          |
 | LICENSE                 | Apache 2.0                                      |
-| LICENSE-dependencies.md | Licenses for the project’s dependency libraries |
+| dependencies-license.md | Licenses for the project’s dependency libraries |
 | MAINTAINERS.md          | General guidelines for maintaining              |
 | RELEASE-PROCESS.md      | Release process                                 |
 | SECURITY.md             | Security policies and vulnerability reporting   |
@@ -63,13 +63,13 @@ group = 'org.omnione.did'
 
 jar {
     archiveBaseName.set('did-datamodel-sdk-server') 
-    archiveVersion.set('1.0.0')
+    archiveVersion.set('2.0.0')
     archiveClassifier.set('') 
 }
 
 java {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
 }
 
 dependencies {
@@ -81,7 +81,7 @@ dependencies {
 }
 ```
 2. In the IDE, open the `Gradle task` window and execute the `build > build` task for the project.
-3. Once the execution is complete, the `did-datamodel-sdk-server-1.0.0.jar` file will be generated in the `%Data-Model repository%/build/libs/` folder.
+3. Once the execution is complete, the `did-datamodel-sdk-server-2.0.0.jar` file will be generated in the `%Data-Model repository%/build/libs/` folder.
 
 <br>
 
@@ -90,7 +90,7 @@ dependencies {
 Libraries can be found in the [Releases](https://github.com/OmniOneID/did-datamodel-sdk-server/releases).
 
 ### DataModel SDK
-1. Copy the did-data-model-sdk-server-1.0.0.jar file to the libs of the server project.
+1. Copy the did-data-model-sdk-server-2.0.0.jar file to the libs of the server project.
 2. Add the following dependencies to the server project's build.gradle.
 
 ```groovy
@@ -100,9 +100,19 @@ Libraries can be found in the [Releases](https://github.com/OmniOneID/did-datamo
     implementation 'org.projectlombok:lombok:1.18.34'
     annotationProcessor 'org.projectlombok:lombok:1.18.34'
 
-    implementation files('libs/did-datamodel-sdk-server-1.0.0.jar')
+    implementation files('libs/did-datamodel-sdk-server-2.0.0.jar')
 ```
 3. Sync `Gradle` to ensure the dependencies are properly added.
+
+## Change Log
+
+The Change Log provides a detailed record of version-specific changes and updates. You can find it here:
+- [Change Log](./CHANGELOG.md)
+
+## OpenDID Demonstration Videos <br>
+To watch our demonstration videos of the OpenDID system in action, please visit our [Demo Repository](https://github.com/OmniOneID/did-demo-server). <br>
+
+These videos showcase key features including user registration, VC issuance, and VP submission processes.
 
 ## Contributing
 
